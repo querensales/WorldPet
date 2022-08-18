@@ -1,0 +1,54 @@
+<div class="container">
+
+  <div class="form-image">
+    <img src="/assets/img/humanepet.svg" alt="">
+  </div>
+
+  <div class="form">
+    <form action="#">
+      <div class="form-header">
+        <div class="title">
+          <h1>{{title}}</h1>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <label for="firstname">Primeiro Nome</label>
+          <input id="firstname" type="text" [(ngModel)]="cliente.firstname" name="firstname">
+        </div>
+
+        <div class="input-box">
+          <label for="lastname">Sobrenome</label>
+          <input id="lastname" type="text" [(ngModel)]="cliente.lastname" name="lastname">
+        </div>
+
+        <div class="input-box">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" [(ngModel)]="cliente.email" name="email">
+        </div>
+
+        <div class="input-box">
+          <label for="number">Celular</label>
+          <input id="number" type="tel" [(ngModel)]="cliente.number" name="number">
+        </div>
+
+        <div class="input-box">
+          <label for="cpf">CPF</label>
+          <input id="cpf" type="text" [(ngModel)]="cliente.cpf" name="cpf">
+        </div>
+
+
+        <div class="input-box">
+          <label for="petname">Nome do pet</label>
+          <input id="petname" type="petname" [(ngModel)]="cliente.petname" name="petname">
+        </div>
+
+      </div>
+
+      <div class="continue-button">
+        <button type="submit"> Salvar cadastro </button>
+      </div>
+    </form>
+  </div>
+</div>
