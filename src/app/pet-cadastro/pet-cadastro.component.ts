@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PetCadastroComponent implements OnInit {
 
+title: string = 'Cadastro pet'
+
   constructor() { }
 
   ngOnInit(): void {

@@ -5,18 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClienteCadastroComponent } from './cliente-cadastro/cliente-cadastro.component';
 import { PetCadastroComponent } from './pet-cadastro/pet-cadastro.component';
-
+import { RouterModule} from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
     ClienteCadastroComponent,
     PetCadastroComponent,
+
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
