@@ -17,7 +17,7 @@
 
         <div class="input-box">
           <label for="name">Nome:</label>
-          <input id="name" type="text" name="name">
+          <input id="name" type="text" name="name" [(ngModel)]="petModel.name">
         </div>
 
         <section class="especie">
@@ -25,16 +25,16 @@
             <label for="especieName">Espécie:</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Cão</label>
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="canino">
+            <label class="form-check-label" for="inlineCheckbox1">Canino</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">Gato</label>
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="felino">
+            <label class="form-check-label" for="inlineCheckbox2">Felino</label>
           </div>
 
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="roedor">
             <label class="form-check-label" for="inlineCheckbox2">Roedor</label>
           </div>
         </section>

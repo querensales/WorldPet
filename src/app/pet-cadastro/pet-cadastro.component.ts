@@ -1,3 +1,4 @@
+import { petModel } from './../../shared/pet.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PetCadastroComponent implements OnInit {
 
-title: string = 'Cadastro pet'
+  title: string = 'Cadastro pet'
+  petModel: petModel = new petModel();
+  especie!: [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.petModel.name = '';
+    this.petModel.especie = '';
+    this.petModel.raca = '';
   }
+
 
 }
