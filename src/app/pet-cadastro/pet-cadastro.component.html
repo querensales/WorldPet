@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="form-image">
-    <img src="/assets/img/pet.png" alt="">
+    <img src="/assets/img/pet.png" alt="Gatinho com o dono">
   </div>
 
   <div class="form">
@@ -20,14 +20,32 @@
           <input id="name" type="text" name="name">
         </div>
 
+        <section class="especie">
+          <div class="especie-name">
+            <label for="especieName">Espécie:</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Cão</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Gato</label>
+          </div>
 
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Raça</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Roedor</label>
+          </div>
+        </section>
       </div>
+
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Raça</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
 
       <div class="continue-button">
         <button type="submit"> Salvar cadastro </button>
