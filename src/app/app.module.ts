@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { ClienteCadastroComponent } from './cliente-cadastro/cliente-cadastro.component';
 import { PetCadastroComponent } from './pet-cadastro/pet-cadastro.component';
 import { RouterModule} from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     ClienteCadastroComponent,
-    PetCadastroComponent,
+    PetCadastroComponent
 
   ],
 
@@ -18,7 +19,8 @@ import { RouterModule} from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,18 +24,9 @@
           <div class="especie-name">
             <label for="especieName">Espécie:</label>
           </div>
-          <div class="form-check form-check-inline">
+          <div class="form-check form-check-inline" *ngFor="let item of especies">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="canino">
-            <label class="form-check-label" for="inlineCheckbox1">Canino</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="felino">
-            <label class="form-check-label" for="inlineCheckbox2">Felino</label>
-          </div>
-
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="roedor">
-            <label class="form-check-label" for="inlineCheckbox2">Roedor</label>
+            <label class="form-check-label" for="inlineCheckbox1">{{item.descricao}}</label>
           </div>
         </section>
       </div>
