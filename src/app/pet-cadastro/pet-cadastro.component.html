@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="form-image">
-    <img src="/assets/img/pet.png" alt="Gatinho com o dono">
+    <img src="../../assets/img/welcome.svg" alt="Gatinho com o dono">
   </div>
 
   <div class="form">
@@ -13,12 +13,19 @@
         </div>
       </div>
 
-      <div class="input-group">
+      <aside class="row input-group">
 
-        <div class="input-box">
+        <div class="col input-box">
           <label for="name">Nome:</label>
           <input id="name" type="text" name="name" [(ngModel)]="petModel.name">
+
+          <div class="col input-box">
+            <label for="lastname">Tutor:</label>
+            <input id="lastname" type="text" name="tutorName">
+          </div>
         </div>
+
+
 
         <section class="especie">
           <div class="especie-name">
@@ -29,7 +36,7 @@
             <label class="form-check-label" for="inlineCheckbox1">{{item.descricao}}</label>
           </div>
         </section>
-      </div>
+      </aside>
 
       <select class="form-select" aria-label="Default select example">
         <option selected>Raça</option>
