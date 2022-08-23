@@ -31,7 +31,6 @@ export class PetCadastroComponent implements OnInit {
 
   salvar(): void{
 
-    console.log(this.especies)
   }
 
 }

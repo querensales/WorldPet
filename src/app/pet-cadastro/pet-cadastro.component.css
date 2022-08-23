@@ -72,8 +72,8 @@
   outline: 1px solid  #00B0FF;
 }
 
-.input-box label, .especie-name{
-  font-size: 0.75rem;
+.input-box label, .especie-name, .form-check-label{
+  font-size: 0.85rem;
   font-weight: 600;
   color: #000000c0;
 }
