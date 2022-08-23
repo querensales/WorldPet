@@ -21,12 +21,17 @@ export class PetCadastroComponent implements OnInit {
     this.petModel.name = '';
     this.petModel.especie = '';
     this.petModel.raca = '';
-
-    this.requisicao.get('https://localhost:7150/Especie').subscribe(result => {
+    this.requisicao.get<especieModel[]>('https://localhost:7150/Especie').subscribe(result => {
       console.log('result:', result)
+      this.especies = result;
+
     })
 
   }
 
+  salvar(): void{
+
+    console.log(this.especies)
+  }
 
 }

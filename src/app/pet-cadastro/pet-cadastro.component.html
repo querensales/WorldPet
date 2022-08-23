@@ -31,10 +31,12 @@
           <div class="especie-name">
             <label for="especieName">Espécie:</label>
           </div>
+
           <div class="form-check form-check-inline" *ngFor="let item of especies">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="canino">
-            <label class="form-check-label" for="inlineCheckbox1">{{item.descricao}}</label>
+            <input class="form-check-input" type="radio" id="flexRadioDefault1" value="canino" >
+            <label class="form-check-label" for="flexRadioDefault1">{{item.descricao}}</label>
           </div>
+
         </section>
       </aside>
 
@@ -46,7 +48,7 @@
       </select>
 
       <div class="continue-button">
-        <button type="submit"> Salvar cadastro </button>
+        <button type="button" (click)="salvar()">Salvar cadastro </button>
       </div>
     </form>
   </div>
