@@ -99,7 +99,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1064px) {
   .form-image {
       display: none;
   }
